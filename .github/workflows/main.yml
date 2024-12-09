@@ -1,6 +1,9 @@
 name: HelloWorld
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   echo:

@@ -1,9 +1,11 @@
 name: Docker Test
 
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows:
+      - HelloWorld
+    types:
+      - completed
 
 jobs:
   build:
